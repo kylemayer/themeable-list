@@ -1,14 +1,18 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
+import { MemoryRouter } from 'react-router-dom';
 import App from './App';
+import { listAvatars } from '../../fixtures/listAvatars.json';
 
 const server = setupServer(
-  rest.get('https://last-airbender-api.herokuapp.com/api/v1/characters',
+  rest.get(
+    'https://last-airbender-api.herokuapp.com/api/v1/characters',
     (req, res, ctx) => {
-      return res(ctx.json());
-    })
+      return res(ctx.json(listAvatars));
+    }
+  )
 );
 
 describe('App page', () => {
@@ -17,9 +21,9 @@ describe('App page', () => {
 
   it('renders a list of avatar characters', async () => {
     render(
-      <App />
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
     );
-
-
   });
 });

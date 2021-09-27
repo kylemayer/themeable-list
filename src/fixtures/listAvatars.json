@@ -1,0 +1,116 @@
+[
+    {
+        "_id": "5cf5679a915ecad153ab68d8",
+        "allies": [
+            "Katara"
+        ],
+        "enemies": [],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/9/9a/Ashuna.png/revision/latest?cb=20161026183558",
+        "name": "Ashuna"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68cd",
+        "allies": [
+            "Tenzin"
+        ],
+        "enemies": [
+            "Equalists"
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/c/cd/Air_Acolyte_woman.png/revision/latest?cb=20140421100225",
+        "name": "Air Acolyte woman",
+        "affiliation": " Air Acolytes Air Temple Island"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68d9",
+        "allies": [
+            "Wan"
+        ],
+        "enemies": [
+            "Jaya"
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/7/76/Aye-aye_spirit.png/revision/latest?cb=20131019224533",
+        "name": "Aye-aye spirit",
+        "affiliation": "Spirit World"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68de",
+        "allies": [
+            "His "
+        ],
+        "enemies": [
+            "Korra "
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/1/11/Ba_Sing_Se_airship_captain.png/revision/latest?cb=20140808221400",
+        "name": "Ba Sing Se airship captain",
+        "affiliation": "Earth Kingdom Air Force"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68e5",
+        "allies": [
+            "Bolin"
+        ],
+        "enemies": [
+            "Military of the Earth Empire"
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/8/87/Baraz_and_Ahnah.png/revision/latest?cb=20150407110151",
+        "name": "Baraz and Ahnah"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68e7",
+        "allies": [
+            "Aang"
+        ],
+        "enemies": [
+            "Fire Nation"
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/e/e3/Bato_smiling.png/revision/latest?cb=20130626122901",
+        "name": "Bato",
+        "affiliation": "Southern Water Tribe"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68db",
+        "allies": [
+            "Fire Nation"
+        ],
+        "enemies": [
+            "Water Tribes"
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/a/ad/Azula_%28games%29.png/revision/latest?cb=20131228015042",
+        "name": "Azula (games)",
+        "affiliation": "Fire Nation"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68e0",
+        "allies": [
+            "Zei"
+        ],
+        "enemies": [],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/2/2c/Ba_Sing_Se_student.png/revision/latest?cb=20140422090140",
+        "name": "Ba Sing Se University student",
+        "affiliation": "Ba Sing Se University"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68e6",
+        "allies": [
+            "Military of the Earth Empire"
+        ],
+        "enemies": [
+            "Wu"
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/a/ae/Bathroom_attendant.png/revision/latest?cb=20150407110151",
+        "name": "Bathroom attendant",
+        "affiliation": "Military of the Earth Empire"
+    },
+    {
+        "_id": "5cf5679a915ecad153ab68ec",
+        "allies": [
+            "Toph"
+        ],
+        "enemies": [
+            "Toph "
+        ],
+        "photoUrl": "https://vignette.wikia.nocookie.net/avatar/images/7/70/The_Boulder.png/revision/latest?cb=20140317195145",
+        "name": "The Boulder",
+        "affiliation": " Earth Kingdom Earth Rumble VI (formerly)"
+    }
+]
