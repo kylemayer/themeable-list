@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAvatars } from '../../../services/useAvatars';
 import Characters from './Characters';
+import '../../../styles/main.css';
 
 
 const CharacterList = () => {
