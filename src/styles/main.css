@@ -3,6 +3,6 @@ ul {
 }
 
 img {
-    width: 20%;
-    height: 40%;
+    margin: 5px;
+    border-radius: 25px;
 }
