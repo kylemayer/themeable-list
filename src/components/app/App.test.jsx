@@ -42,8 +42,10 @@ describe('App page', () => {
 
     const toggle = screen.getByLabelText('theme');
 
-    fireEvent.change(toggle, { target: { value: 'black' } });
-    expect(toggle.value).toBe('black');
+    fireEvent.change(toggle, { target: { value: 'white' } });
+    fireEvent.change(toggle, { target: { value: '#3B3B3B' } });
+
+    expect(toggle.value).toBe('#3B3B3B');
   });
 });
 
