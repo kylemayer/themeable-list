@@ -5,13 +5,13 @@ const ModeContext = createContext();
 
 const ModeProvider = ({ children }) => {
   const [mode, setMode] = useState(true);
-
   const toggleDarkMode = () => setMode((prevState) => !prevState);
-
   const setting = { mode, toggleDarkMode };
 
   return (
-    <ModeContext.Provider value={setting}>{children}</ModeContext.Provider>
+    <ModeContext.Provider value={setting}>
+      {children}
+    </ModeContext.Provider>
   );
 };
 

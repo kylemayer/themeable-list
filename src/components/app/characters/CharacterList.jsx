@@ -7,7 +7,7 @@ const CharacterList = () => {
   const { avatars } = useAvatars();
 
   return (
-    <ul>
+    <ul aria-label="avatars">
       {avatars.map((avatar) => (
         <li key={avatar.name}>
           <Characters image={avatar.image} name={avatar.name} />

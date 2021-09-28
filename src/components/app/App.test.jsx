@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import { MemoryRouter } from 'react-router-dom';
+import ModeProvider from '../context/ModeProvider';
 import App from './App';
 import { listAvatars } from '../../fixtures/listAvatars.json';
 
@@ -20,10 +20,16 @@ describe('App page', () => {
   afterAll(() => server.close());
 
   it('renders a list of avatar characters', async () => {
-    render(
-      <MemoryRouter>
+    const { container } = render(
+      <ModeProvider>
         <App />
-      </MemoryRouter>
+      </ModeProvider>
     );
+
+    screen.getByRole('button', { name: 'theme' });
+
+    const ul = await screen.findByRole('list', { name: 'avatars' });
+    expect(ul).not.toBeEmptyDOMElement;
+    expect(container).toMatchSnapshot;
   });
 });

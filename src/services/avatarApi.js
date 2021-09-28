@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-export const fetchAvatars = async (page) => {
+export const fetchAvatars = async () => {
   const res = await fetch(
-    `https://last-airbender-api.herokuapp.com/api/v1/characters?perPage=10&page=${page}`
+    'https://last-airbender-api.herokuapp.com/api/v1/characters'
   );
   const json = await res.json();
 

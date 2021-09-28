@@ -15,7 +15,7 @@ export default function App() {
       }
     >
       <Header />
-      <CharacterList />;
+      <CharacterList />
     </div>
   );
 }

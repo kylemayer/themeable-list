@@ -9,7 +9,7 @@ const Header = () => {
       backgroundColor: mode ? 'white' : '#3B3B3B',
       color: mode ? '#3B3B3B' : 'white',
     }}>
-      <button onClick={toggleMode}>
+      <button aria-label="theme" onClick={toggleMode}>
         Dark Mode!
       </button>
     </header>
