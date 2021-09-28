@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import ModeProvider from '../context/ModeProvider';
@@ -32,4 +32,20 @@ describe('App page', () => {
     expect(ul).not.toBeEmptyDOMElement;
     expect(container).toMatchSnapshot;
   });
+
+  it('toggles the theme mode from light to dark', async () => {
+    render(
+      <ModeProvider>
+        <App />
+      </ModeProvider>
+    );
+
+    const toggle = screen.getByLabelText('theme');
+
+    fireEvent.change(toggle, { target: { value: 'white' } });
+    fireEvent.change(toggle, { target: { value: '#3B3B3B' } });
+
+    expect(toggle.value).toBe('#3B3B3B');
+  });
 });
+
